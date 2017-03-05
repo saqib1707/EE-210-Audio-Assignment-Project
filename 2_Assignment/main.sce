@@ -12,21 +12,40 @@ exec('get_continuous_sinusoid.sci');
 F0 = 270;       // Hz
 a = 0.7;        
 phi = %pi/4;    //(Radians)
-T = 800;       //(ms)    
+T = 800;       //(in ms that is sample for 0.8 sec)
 
+//[y,t] = get_continuous_sinusoid(a,F0,phi,T);
+//z= y
+phi = 0
+f = 440
+a = 1
+T = 2000
 [y,t] = get_continuous_sinusoid(a,F0,phi,T);
 
-F0 = 220;
-
+f = 370
 [y1,t] = get_continuous_sinusoid(a,F0,phi,T);
 
+f = 294
+[y2,t] = get_continuous_sinusoid(a,F0,phi,T);
+
+//
+//for f = 270:10:400   // in Hz
+	//a = exp(-1*f/400);
+//	a = 1
+//	T=400;
+	//phi = (f*%pi)/4
+//	[y,t] = get_continuous_sinusoid(a,f,phi,T);
+//	z = cat(2,z,y);
+//end
+
+
+//F0 = 270;
+//phi = 0
+
+//[y1,t] = get_continuous_sinusoid(a,F0,phi,T);
+
 // concatenate the 2 sinusoids in sequence
-z = cat(2,y,y1)
-
- 
-
-
-
+z = cat(2,y,y1,y2)
 
 
 // Plot the continuous time curve
