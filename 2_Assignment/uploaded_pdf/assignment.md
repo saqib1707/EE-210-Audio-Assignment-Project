@@ -1,7 +1,15 @@
-# Music Generator
+# Music Synthesizer
 
 ### Name    : Saqib Azim
 ### Roll No : 150070031
+
+## Methodology Used
+To start with, I created a function named music_synthesizer which takes a particular frequency f0 as argument and then adds sinusoidal harmonics of fundamental frequency f0 with amplitudes of each harmonic in decreasing order in an effort to create a music coming from a guitar. Those added signals have been concatenated later using cat(built-in) function to create a full-fledged music.
+I observed that adding harmonics actually helps to improve the sound quality or make the sound richer and thus change the timbre of the sound.
+
+I have added the songs(music) files synthesized to the google drive.
+[Link for song_1](https://drive.google.com/open?id=0B-VD_5ul_aJzaDg2R3ZpQUZ1a2s)
+[Link for song_2](https://drive.google.com/open?id=0B-VD_5ul_aJzU256V1h6WG5aU0U)
 
 This function generates a sinusoid of frequency F0 and then returns the sampled value. 
 #### **get_continuous_sinusoid.sci**
