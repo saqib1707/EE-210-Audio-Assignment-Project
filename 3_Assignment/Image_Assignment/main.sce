@@ -39,7 +39,7 @@ Y = conv_2D(Y,H4);
 Y = conv_2D(Y,H4);
 Y = conv_2D(Y,H4);
 imshow(Y);
-//imwrite(Y,'D:\Saksham IIT\4th Semester Curriculum\EE 210-Signal and Systems\CA3\3B_Image_Assignment\Image_Assignment\Images\Badass_H2_5.png');
+//imwrite(Y,'/home/saqib1707/Acads/4thsem/EE210_Signals&Systems/3_Assignment/Image_Assignment/Images/Badass_H2_5.png');
 imwrite(Y,'/home/saqib1707/Acads/4thsem/EE210_Signals&Systems/3_Assignment/Image_Assignment/Images/sem_ic_H4_5.png');
 
 
